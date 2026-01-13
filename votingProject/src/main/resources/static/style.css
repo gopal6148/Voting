@@ -1,0 +1,119 @@
+body {
+    font-family: "Noto Sans Devanagari", Arial;
+    background: #fff;
+    text-align: center;
+}
+title {
+    margin: 20px 0;
+}
+.purple-strip {
+    background: #3e3b8f;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    border-radius: 25px;
+}
+.share-box {
+    background: #3a74a8;
+    color: white;
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 6px 15px;
+    border-radius: 15px;
+    background: #4b3f92;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.whatsapp-btn:hover {
+    background: #1ebe5d;
+    
+}
+.vote-msg {
+    margin-top: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+.evm-table {
+    width: 90%;
+    height:600px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.evm-table th,
+.evm-table td {
+    border: 2px solid #000;
+    padding: 10px;
+}
+.selected {
+    background: #3a74a8;
+    color: white;
+}
+.vote-btn {
+    background: #3e3b8f;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.footer {
+    background: #f6f4c1;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.footer span {
+    background: red;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+.line-container {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+.moving-line {
+  white-space: nowrap;
+  color: #00ffcc;
+  font-size: 20px;
+  animation: moveLine 10s linear infinite;
+}
+
+@keyframes moveLine {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

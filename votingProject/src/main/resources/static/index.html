@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <title>डेमो मतदान यंत्र</title>
+    <link rel="icon" type="image/png" href="shivsena.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2 class="title">🗳️ पुणे महानगरपालिका निवडणूक 2026 डेमो मतदान यंत्र</h2>
+<div class="purple-strip">
+    डेमो मतदानासाठी "भाग ५ व साठी तयारी वाजवणारा" समोरील निळे बटन दाबा
+</div>
+
+<div class="share-box">
+    मतदानाच्या दिवशी सुद्धा <b>"भाग ५ व साठी तयारी वाजवणारा माणूस"</b>
+    समोरील निळे बटन दाबून प्रचार करा
+    <br><br>
+<button class="whatsapp-btn" onclick="shareWhatsApp()">
+    📲 WhatsApp SHARE
+</button><br>
+
+<p class="vote-msg">मतांनी विजय करा</p>
+</div>
+
+<table class="evm-table">
+    <thead>
+   <tr>
+        <th>क्र.</th>
+        <th>उमेदवाराचे नाव</th>
+        <th>उमेदवाराचे फोटो</th>
+        <th>चिन्ह</th>
+        <th>बल्ब</th>
+        <th>बटन</th>
+    </tr>
+    </thead>
+    <tbody id="candidateTable"></tbody>
+    
+</table>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>तुमचा डेमो बॅलेट यंत्र बनवून घेण्यासाठी संपर्क 9518355613</p>
+    <h3>Total Votes: <span id="totalVotes">0</span></h3>
+    <p>Developed by <a href="www.gptsoftware.in">GPT Software Solution</a></p>
+    <p style="text-align: right;">#gopalbangale</p>
+</div>
+<div class="line-container">
+  <div class="moving-line">
+    तुमचा डेमो बॅलेट यंत्र बनवून घेण्यासाठी संपर्क 9518355613
+  </div>
+</div>
+<audio id="voteSound" preload="auto">
+    <source src="/sound/vote.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="script.js"></script>
+</body>
+</html>
