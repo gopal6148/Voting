@@ -7,8 +7,13 @@ function loadCandidates() {
         .then(data => {
             let table = document.getElementById("candidateTable");
             table.innerHTML = "";
+			
+			// 1. Initialize a variable to count total votes
+			            let totalVotesCount = 0;
 
            data.forEach((c, index) => {
+			// 2. Add each candidate's votes to the total
+			                totalVotesCount += c.votes;
                 table.innerHTML += `
 				<tr>
 				  <td>1</td>
@@ -62,6 +67,8 @@ function loadCandidates() {
 				</tr>
                 `;
             });
+			// 3. Update the HTML element with the calculated total
+			            document.getElementById("totalVotes").innerText = totalVotesCount;
         });
 }
 function playVoteSound() {
@@ -71,10 +78,10 @@ function playVoteSound() {
 }
 // SEND vote to backend
 function vote(candidateId) {
-	//if (localStorage.getItem("voted") === "true") {
-	        //alert(" तुम्ही आधीच मतदान केले आहे");
-	      //  return;
-	   // }
+	if (localStorage.getItem("voted") === "true") {
+	        alert(" तुम्ही आधीच मतदान केले आहे");
+	        return;
+	    }
 	playVoteSound();
     fetch(BASE_URL + "/api/vote/" + candidateId, {
         method: "POST"
